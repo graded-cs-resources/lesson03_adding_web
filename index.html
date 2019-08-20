@@ -1,0 +1,73 @@
+
+<!--
+    HTML stands for "HyperText Markup Language". It is used
+    to define the STRUCTURE of a web page (but not how it looks
+    or behaves).
+
+    Comments in HTML start with the <!-- thing you see above
+    (we call this a *tag*) and end with the one down below. 
+
+    The first line below simply tells our web browser this is an HTML file.
+-->
+<!DOCTYPE html>
+
+<!--
+    In HTML, you use OPENING and CLOSING tags to surround *regions* of your page.
+    The <html> is an opening tag. At the very bottom, you'll see it's closing tag, </html>
+    These surround the entire page.
+
+    The <head> and </head> tags surround *header information*. This includes the title (which appears
+    in the tab name for a site) and any *metadata* that doesn't define the structure of the page itself
+    - including links to other files that are important. Our header links to a javascript file (for interactivity)
+    and a CSS file (which defines the look of the page)
+-->
+<html>
+  <head>
+    <title>
+      My First TypeScript Page
+    </title>
+    <script type="text/javascript" src="interact.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <!--
+      The visible part of the page is all contained between <body> and </ body>. If you have a header or footer
+      you can have <header></header> tags at the beginning of the body and <footer></footer> at the end, but our
+      page doesn't have those, so we put <main></main> tags just inside the body to hold our page.
+  -->
+  <body>
+    <main>
+      <!--
+          <h1> and </h1> tags sourround Headings. h1 is the most important, down to h6 the least important. 
+          Since this h1 at the top is our title (h1 usually is), we give it the special id 'title'. Any region
+          can be given an id in this way, but each id can only appear once.
+      -->
+      <h1 id="title">
+        My First TypeScript Page
+      </h1>
+      <h2>Input Area</h2>
+      <!--
+          A 'div' is a generic structure that lets you group elements together with a name. Our website has an
+          input area and an output area, so we made two divs. I put the headers outside the divs, but I could
+          have done it the other way.
+
+          For now, don't worry about the inputs or buttons - you'll see them when we run the page.
+      -->
+      <div id="input_area">
+        <p>
+          <label for="input_text">Type a word: </label>
+          <input type="text" id="input_text" />
+        </p>
+        <p>
+          <button id="interact_button" onclick="interact()">
+            Interact!
+          </button>
+        </p>
+      </div>
+      <h2>Output Area</h2>
+      <!--
+          Right now our output area is blank. We'll use the typescript to fill it!
+      -->
+      <div id="output_area"></div>
+    </main>
+  </body>
+</html>
