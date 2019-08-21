@@ -1,5 +1,5 @@
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     "version": "2.0.0",
     "tasks": [
@@ -21,7 +21,7 @@
         {
             "label": "Serve",
             "type": "shell",
-            "command": "browser-sync -s -f -no-notify --port 9000",
+            "command": "browser-sync -s -f -no-ui -no-notify --port 9000",
             "presentation": {
                 "echo": true,
                 "reveal": "always",
