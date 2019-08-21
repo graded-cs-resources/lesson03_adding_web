@@ -1,15 +1,15 @@
 /* In this activity, we will see how typescript / javascript
  * can interact with web sites, the most common use case of these
- * languages. 
- * 
+ * languages.
+ *
  * Start by taking at look at the "index.html" file. Though we will
  * not learn this coding language in great detail in class, being
  * able to read it or modify it in simple ways can be very helpful
- * for all modern programmers. Go read the index.html file NOW, then return 
+ * for all modern programmers. Go read the index.html file NOW, then return
  * here and try to answer these questions without looking. After you try, look back.
- * 
+ *
  * 1. How do you make a comment in html?
- * 
+ *
  * 2. Where does text between the <title> and </title> tags appear?
  * 
  * 3. How could you add an id to the html element below? (edit it)
@@ -40,7 +40,7 @@ function interact() {
      *     input element, which is why we use the <HTMLInputElement> assertion. This tells TypeScript that we
      *     are allowed to use certain features of that type that we otherwise wouldn't have.
      */
-    let input_text_box:HTMLInputElement = 
+    let input_text_box:HTMLInputElement =
         <HTMLInputElement>document.getElementById("input_text");
 
     // input_text_box is a link to the input element. `.value` tells us to look up what's inside the text box.

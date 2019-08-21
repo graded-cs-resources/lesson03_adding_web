@@ -1,4 +1,3 @@
-/* This file tells TypeScript what to do. You don't need to worry about it for now.*/
 {
     "compilerOptions": {
       /* Basic Options */
@@ -14,4 +13,4 @@
       "removeComments": true
     }
   }
-  
+}
