@@ -12,54 +12,43 @@
 <!DOCTYPE html>
 
 <!--
-    In HTML, you use OPENING and CLOSING tags to surround *regions* of your page.
+    In HTML, you use OPENING and CLOSING tags to surround *elements* of your page.
     The <html> is an opening tag. At the very bottom, you'll see it's closing tag, </html>
     These surround the entire page.
-
-    The <head> and </head> tags surround *header information*. This includes the title (which appears
-    in the tab name for a site) and any *metadata* that doesn't define the structure of the page itself
-    - including links to other files that are important. Our header links to a javascript file (for interactivity)
-    and a CSS file (which defines the look of the page)
 -->
 <html>
   <head>
+  <!-- This is the 'heading' region. Most things here are invisible to the user. The title says the tab name.-->
     <title>
       My First TypeScript Page
     </title>
+    <!-- these next two lines load in our other files. One is the javascript, one is the styling.-->
     <script type="text/javascript" src="interact.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <!--
-      The visible part of the page is all contained between <body> and </ body>. If you have a header or footer
-      you can have <header></header> tags at the beginning of the body and <footer></footer> at the end, but our
-      page doesn't have those, so we put <main></main> tags just inside the body to hold our page.
-  -->
+
+  
   <body>
+    <!-- The visible part of the page is all contained between <body> and </ body>.-->
+    <!-- Since we don't have a header or footer, we create a "main" section right away. -->
     <main>
-      <!--
-          <h1> and </h1> tags sourround Headings. h1 is the most important, down to h6 the least important. 
-          Since this h1 at the top is our title (h1 usually is), we give it the special id 'title'. Any region
-          can be given an id in this way, but each id can only appear once.
-      -->
+      <!-- <h1> and </h1> surround large headings. This particular h1 is our title, thus the id.--> 
       <h1 id="title">
         My First TypeScript Page
       </h1>
+      <!-- <h2> amd </h2> surround smaller headings. These can go down to h6 -->
       <h2>Input Area</h2>
-      <!--
-          A 'div' is a generic structure that lets you group elements together with a name. Our website has an
-          input area and an output area, so we made two divs. I put the headers outside the divs, but I could
-          have done it the other way.
-
-          For now, don't worry about the inputs or buttons - you'll see them when we run the page.
-      -->
+      <!-- "divs" are generic structures to break your page into different parts.-->
       <div id="input_area">
+        <!-- <p> and </p> tags surround paragraphs. We are breaking this into two paragraphs.-->
         <p>
-          <label for="input_text">Type a word: </label>
+          <!-- these next two set up a text input box and a label for it-->
+          <label for="input_text">Talk to me! </label>
           <input type="text" id="input_text" />
         </p>
         <p>
           <button id="interact_button" onclick="interact()">
-            Interact!
+            Submit
           </button>
         </p>
       </div>
