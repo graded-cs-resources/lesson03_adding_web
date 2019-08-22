@@ -1,10 +1,12 @@
+/* This file determines the colors and so forth for the site. More later! */
+
 #title {
     color:blue;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 #output_area {
-    background-color:#dddddd;
+    background-color: rgb(221, 221, 221);
     border: 1px solid black;
     min-height: 100px;
 }

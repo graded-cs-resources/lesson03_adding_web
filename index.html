@@ -1,4 +1,3 @@
-
 <!--
     HTML stands for "HyperText Markup Language". It is used
     to define the STRUCTURE of a web page (but not how it looks
@@ -18,23 +17,22 @@
 -->
 <html>
   <head>
-  <!-- This is the 'heading' region. Most things here are invisible to the user. The title says the tab name.-->
+    <!-- This is the 'heading' regin. Most things here are invisible to the user. The title gives the tab name.-->
     <title>
-      My First TypeScript Page
+      My Simple Chatbot
     </title>
     <!-- these next two lines load in our other files. One is the javascript, one is the styling.-->
-    <script type="text/javascript" src="interact.js"></script>
+    <script type="text/javascript" src="chat.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
-  
   <body>
     <!-- The visible part of the page is all contained between <body> and </ body>.-->
     <!-- Since we don't have a header or footer, we create a "main" section right away. -->
     <main>
-      <!-- <h1> and </h1> surround large headings. This particular h1 is our title, thus the id.--> 
+      <!-- <h1> and </h1> surround large headings. This particular h1 is our title, thus the id.-->
       <h1 id="title">
-        My First TypeScript Page
+        My Simple Chatbot 🤖
       </h1>
       <!-- <h2> amd </h2> surround smaller headings. These can go down to h6 -->
       <h2>Input Area</h2>
@@ -47,7 +45,7 @@
           <input type="text" id="input_text" />
         </p>
         <p>
-          <button id="interact_button" onclick="interact()">
+          <button id="chat_button" onclick="chat()">
             Submit
           </button>
         </p>
