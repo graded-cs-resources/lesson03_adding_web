@@ -21,12 +21,9 @@
  * section of the HTML ensures. There are other ways to make this happen too, but this is the simplest for now.
  */
 function chat() {
-  let input_text_box: HTMLInputElement = 
-  <HTMLInputElement>(document.getElementById("input_text"));
+  let input_text_box = <HTMLInputElement>(document.getElementById("input_text"));
   /* `let`, as you should know by now, simply means this is a variable
    * `input_text_box` is its name.
-   * `HTMLInputElement` is its type. This is a special type used for interacting with HTML elements
-   *         made with <input> tags.
    * `<HTMLInputElement>` (after the =) is a TYPE ASSERTION. These are used in TypeScript when
    *         TypeScript isn't sure we're going to get the type we want, but WE are sure. You can use
    *         these to assure it we're right and avoid errors.
@@ -48,8 +45,7 @@ function chat() {
   // Let's make our computer talk back!
   // First, we need to get a link to the OUTPUT area.
 
-  let output_div: HTMLDivElement = 
-    <HTMLDivElement>(document.getElementById("output_area"));
+  let output_div = <HTMLDivElement>(document.getElementById("output_area"));
 
   // QUESTION: Why do you think we use the type HTMLDivElement here?
   // ANSWER:
