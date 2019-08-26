@@ -9,7 +9,7 @@ In this lesson, we will explore the very basics of how that interaction might wo
 If you are seeing this, you already clicked the link and have your own version of the code. 
 
 ### Using GitHub Desktop and VS Code
-- [ ] Open GitHub Desktop
+- [ ] Open Github Desktop
 - [ ] Choose "File->Clone from Internet"
 - [ ] Find this repository and clone it to your computer
 - [ ] Open in VS Code by clicking the button.
